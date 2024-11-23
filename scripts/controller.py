@@ -82,7 +82,6 @@ class Controller(Node):
 		print(f"{name} Kd : {self.Kd[state]}")
 
     def publish_pid_errors(self) :
-            
             print(self.error)
             err = PIDError()
             err.roll_error = float(self.error[0])
